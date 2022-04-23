@@ -1,0 +1,94 @@
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->				
+<!--ΞΞ-->		<!DOCTYPE html>																						<!--ΞΞ-->
+<!--ΞΞ-->		<html lang="en-US">																					<!--ΞΞ-->
+<!--ΞΞ-->		<head>																								<!--ΞΞ-->
+<!--ΞΞ-->		<meta charset="utf-8">																				<!--ΞΞ-->
+<!--ΞΞ-->		<meta name="viewport" content="width=device-width, initial-scale=1.0">								<!--ΞΞ-->
+<!--ΞΞ-->		<meta name="Description" content="This page is for learning.">
+<title>Order Now!</title>										<!--ΞΞ-->
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->
+
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->
+<!--ΞΞ-->										<!--ΞΞ-->
+<!--ΞΞ-->		<link rel="stylesheet" type="text/css" href="file\csslibrary.css">									<!--ΞΞ-->
+<!--ΞΞ-->		<link rel="shortcut icon" type="image/x-icon" href="res\icon.png"/>								<!--ΞΞ-->
+<!--ΞΞ-->		</head>																								<!--ΞΞ-->
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->
+<body onload="getitem()">
+
+<!-- DIvyansh Restraunt (This project is fully based on arrays)-->
+<div class="loader" id="loader" hidden></div>
+<div id="blurry">
+<div id="container">
+<div id="innercontainer">
+
+						<h3 id="res">Divyansh Restraunt</h3>
+										<h1 id="res2">Booking Portal</h1>
+                                        <h3>Please fill up the details</h3>
+                                        <a href="makemeal.html" id="back">Back</a><br>
+ Your Full Name :
+ <input type="text" placeholder="You Full Name" id="name"><br>
+ Your Phone Number (Including Country Code) :
+ <input type="number" placeholder="Phone Number" id="phone"><br>
+ <h3>Your Address :</h3>
+ <textarea id="address" placeholder="Enter Your Address"> </textarea><br>
+ <input type="submit" id="submit" onclick="sendemail()">
+ <br>
+ Items You Booked
+<div id="bookeddishes">
+</div>
+
+<i>Only Pay On Delivery Available (Cash).</i><br><br>
+<a href="tel:6260246726"><button id="callbutton">Call Us</button></a>
+
+</div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="file\jslibrary.js"></script>
+<script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    
+    function sendemail(){
+    var name = document.getElementById("name");
+    var phone = document.getElementById("phone");
+    var address = document.getElementById("address");
+    var x = name.value.trim();
+    var y = phone.value.trim();
+    var z = address.value.trim();
+    var bookeddishes = document.getElementById("bookeddishes");
+        if (x == "" || y == "" || z == "") {
+            alert("Please fill in all fields first");
+            
+        } else {
+    document.getElementById("submit").disabled = true;
+    document.getElementById("loader").hidden = false;
+    document.getElementById("blurry").style.filter = "blur(10px)";
+    console.log(name.value);
+    console.log(bookeddishes)
+    var subject = `${name.value} has ordered ${bookeddishes.innerText} at ${address.value}.His/Her Phone no. is ${phone.value}`;
+    console.log(subject);
+    Email.send({
+    SecureToken : "c381021a-74e2-4e52-9ef7-e122d095d6ea",
+    To : 'kdivyansh300@gmail.com',
+    From : "restrauntdk@gmail.com",
+    Subject : "Someone ordered a meal",
+    Body : subject
+}).then(
+  message => {
+      if (message = 'Ok') {
+          alert("Ordered Succesfully!");
+          document.getElementById("loader").hidden = true;
+          document.getElementById("blurry").style.filter = "";
+      }
+      else{
+          alert("An error Occured!");
+      }
+  }
+)
+}
+ }
+</script>
+</html>

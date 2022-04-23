@@ -1,0 +1,195 @@
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->				
+<!--ΞΞ-->		<!DOCTYPE html>																						<!--ΞΞ-->
+<!--ΞΞ-->		<html lang="en-US">																					<!--ΞΞ-->
+<!--ΞΞ-->		<head>																								<!--ΞΞ-->
+<!--ΞΞ-->		<meta charset="utf-8">																				<!--ΞΞ-->
+<!--ΞΞ-->		<meta name="viewport" content="width=device-width, initial-scale=1.0">								<!--ΞΞ-->
+<!--ΞΞ-->		<meta name="Description" content="This page is for learning.">
+				<title>Make Your Meal</title>										<!--ΞΞ-->
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->
+
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->
+<!--ΞΞ-->										<!--ΞΞ-->
+<!--ΞΞ-->		<link rel="stylesheet" type="text/css" href="file\csslibrary.css">									<!--ΞΞ-->
+<!--ΞΞ-->		<link rel="shortcut icon" type="image/x-icon" href="res\icon.png"/>								<!--ΞΞ-->
+<!--ΞΞ-->		</head>																								<!--ΞΞ-->
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->
+<body>
+
+<!-- DIvyansh Restraunt (This project is fully based on arrays)-->
+<div id="container">
+<div id="innercontainer">
+
+						<h3 id="res">Divyansh Restraunt</h3>
+										<h1 id="res2">Make Your Meal</h1>
+<a href="index.html" id="back">Back</a><br>
+<div id="additems">
+<select id="dishselect" onchange="checkif()">
+	<option selected value="dish">Dish</option>
+	<option value="aaam ka achar" >aaam ka achar</option>
+	<option value="aamras" >aamras</option>
+	<option value="achari chicken" >achari chicken</option>
+	<option value="almond milk" >almond milk</option>
+	<option value="almond yogurt" >almond yogurt</option>
+	<option value="aloo bhujia" >aloo bhujia</option>
+	<option value="aloo paratha" >aloo paratha</option>
+	<option value="apple chutney" >apple chutney</option>
+	<option value="baati" >baati</option>
+	<option value="bagara rice" >bagara rice</option>
+	<option value="baingan bharta" >baingan bharta</option>
+	<option value="banana cake" >banana cake</option>
+	<option value="besan burfi" >besan burfi</option>
+	<option value="besan chilli" >besan chilli</option>
+	<option value="bharwa bhindi" >bharwa bhindi</option>
+	<option value="bhindi do pyaza" >bhindi do pyaza</option>
+	<option value="boondi ladoo" >boondi ladoo</option>
+	<option value="bread pakora" >bread pakora</option>
+	<option value="brinjal curry" >brinjal curry</option>
+	<option value="burger" >burger</option>
+	<option value="carrot curry" >carrot curry</option>
+	<option value="cauliflower curry" >cauliflower curry</option>
+	<option value="cauliflower kurma" >cauliflower kurma</option>
+	<option value="chaap" >chaap</option>
+	<option value="chhole bhature" >chhole bhature</option>
+	<option value="chicken vindaloo" >chicken vindaloo</option>
+	<option value="chowmein" >chowmein</option>
+	<option value="cluster beans" >cluster beans</option>
+	<option value="coconut chutney" >coconut chutney</option>
+	<option value="cold coffee" >cold coffee</option>
+	<option value="cucumber raita" >cucumber raita</option>
+	<option value="cucumber salad" >cucumber salad</option>
+	<option value="daal" >daal</option>
+	<option value="dahi vada" >dahi vada</option>
+	<option value="dal fry" >dal fry</option>
+	<option value="dal makhani" >dal makhani</option>
+	<option value="dalia" >dalia</option>
+	<option value="dhokla" >dhokla</option>
+	<option value="dill leaves" >dill leaves</option>
+	<option value="dosa" >dosa</option>
+	<option value="egg salad" >egg salad</option>
+	<option value="eggless banana bread" >eggless banana bread</option>
+	<option value="eggless chocolate cake" >eggless chocolate cake</option>
+	<option value="eggless cupcakes" >eggless cupcakes</option>
+	<option value="eggless orange cake" >eggless orange cake</option>
+	<option value="falooda" >falooda</option>
+	<option value="falooda" >falooda</option>
+	<option value="fish tikka masala" >fish tikka masala</option>
+	<option value="french fries" >french fries</option>
+	<option value="gajar ka halwa" >gajar ka halwa</option>
+	<option value="garlic chutney" >garlic chutney</option>
+	<option value="gatte ki sabji" >gatte ki sabji</option>
+	<option value="ghee" >ghee</option>
+	<option value="ghevar" >ghevar</option>
+	<option value="ginger shot" >ginger shot</option>
+	<option value="green gram curry" >green gram curry</option>
+	<option value="gulab jamun" >gulab jamun</option>
+	<option value="ice cream" >ice cream</option>
+	<option value="instant pot dal" >instant pot dal</option>
+	<option value="jackfruit seeds curry" >jackfruit seeds curry</option>
+	<option value="jalebi" >jalebi</option>
+	<option value="jaljeera" >jaljeera</option>
+	<option value="jeera water" >jeera water</option>
+	<option value="jeeraaloo" >jeeraaloo</option>
+	<option value="kadai paneer" >kadai paneer</option>
+	<option value="kadi" >kadi</option>
+	<option value="kala chana" >kala chana</option>
+	<option value="khaman dhokla" >khaman dhokla</option>
+	<option value="kheer" >kheer</option>
+	<option value="khichdi" >khichdi</option>
+	<option value="kofte" >kofte</option>
+	<option value="kulche" >kulche</option>
+	<option value="laddu" >laddu</option>
+	<option value="ladies fingerfry" >ladies fingerfry</option>
+	<option value="lemon pickle" >lemon pickle</option>
+	<option value="lemon rice" >lemon rice</option>
+	<option value="maggi" >maggi</option>
+	<option value="mango milk shake" >mango milk shake</option>
+	<option value="mango smoothie" >mango smoothie</option>
+	<option value="masala chai" >masala chai</option>
+	<option value="masala dosa" >masala dosa</option>
+	<option value="masala soda" >masala soda</option>
+	<option value="masala vada" >masala vada</option>
+	<option value="matar paneer" >matar paneer</option>
+	<option value="modak" >modak</option>
+	<option value="momo" >momo</option>
+	<option value="moong dal halwa" >moong dal halwa</option>
+	<option value="mushroom masala curry" >mushroom masala curry</option>
+	<option value="naan" >naan</option>
+	<option value="oatmeal pancakes" >oatmeal pancakes</option>
+	<option value="paan" >paan</option>
+	<option value="paneer butter masala" >paneer butter masala</option>
+	<option value="paneer lababdar" >paneer lababdar</option>
+	<option value="paneer recipes" >paneer recipes</option>
+	<option value="panipuri" >panipuri</option>
+	<option value="panjiri" >panjiri</option>
+	<option value="pasta" >pasta</option>
+	<option value="pav bhaji" >pav bhaji</option>
+	<option value="peanut chutney" >peanut chutney</option>
+	<option value="peda" >peda</option>
+	<option value="perugu vada" >perugu vada</option>
+	<option value="pindi chana" >pindi chana</option>
+	<option value="pine applemilk shake" >pine applemilk shake</option>
+	<option value="pineapple juice" >pineapple juice</option>
+	<option value="pizza" >pizza</option>
+	<option value="pizza sauce" >pizza sauce</option>
+	<option value="poha" >poha</option>
+	<option value="poha" >poha</option>
+	<option value="poori" >poori</option>
+	<option value="potato curry" >potato curry</option>
+	<option value="potato sandwich" >potato sandwich</option>
+	<option value="potato wedges" >potato wedges</option>
+	<option value="puffed rice upma" >puffed rice upma</option>
+	<option value="puran poli" >puran poli</option>
+	<option value="quinoa pulao" >quinoa pulao</option>
+	<option value="rabri" >rabri</option>
+	<option value="ragda patties" >ragda patties</option>
+	<option value="rasgulla" >rasgulla</option>
+	<option value="rava dosa" >rava dosa</option>
+	<option value="roasted cashews" >roasted cashews</option>
+	<option value="salmon curry" >salmon curry</option>
+	<option value="samosa" >samosa</option>
+	<option value="schezwan noodles" >schezwan noodles</option>
+	<option value="sesame seeds ladoo" >sesame seeds ladoo</option>
+	<option value="shahi paneer" >shahi paneer</option>
+	<option value="soya burger with soya granules cutlet" >soya burger with soya granules cutlet</option>
+	<option value="spinach curry" >spinach curry</option>
+	<option value="sweet pongal" >sweet pongal</option>
+	<option value="sweet potato stir fry" >sweet potato stir fry</option>
+	<option value="szechuan chicken" >szechuan chicken</option>
+	<option value="tandoori cauliflower" >tandoori cauliflower</option>
+	<option value="tandoori mushroom tikka" >tandoori mushroom tikka</option>
+	<option value="thandai" >thandai</option>
+	<option value="tomato chutney" >tomato chutney</option>
+	<option value="tomato soup" >tomato soup</option>
+	<option value="turmeric rice" >turmeric rice</option>
+	<option value="upma" >upma</option>
+	<option value="veg fried rice" >veg fried rice</option>
+	<option value="veg kurma" >veg kurma</option>
+	<option value="watermelon juice" >watermelon juice</option>
+	<option value="white sauce pasta" >white sauce pasta</option>
+	<option value="zucchini curry" >zucchini curry</option>
+	<option value="zucchini stir fry" >zucchini stir fry</option>
+</select>
+<button id="addbutton" onclick="addselecteditem()" disabled="true">+</button>
+<button id="removebutton" hidden="true" onclick="removingitem()">x</button>
+</div>
+<button onclick="removeall()" id="removeall">Remove All</button>
+<div id="notification">
+
+</div>
+<table id="addeditemtable">
+	<caption><h1><b>Your Cart </b></h1></caption>
+	<tr>		<th>Item Name</th>	<th>Quantity</th>	</tr>
+	
+</table>
+
+<a><button id="book" onclick="run()">Book</button></a>
+</div>
+</div>
+<img src="" id="dishimage">
+
+
+
+</body>
+<script type="text/javascript" src="file\jslibrary.js"></script>	
+</html>

@@ -1,0 +1,62 @@
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->				
+<!--ΞΞ-->		<!DOCTYPE html>																						<!--ΞΞ-->
+<!--ΞΞ-->		<html lang="en-US">																					<!--ΞΞ-->
+<!--ΞΞ-->		<head>																								<!--ΞΞ-->
+<!--ΞΞ-->		<meta charset="utf-8">																				<!--ΞΞ-->
+<!--ΞΞ-->		<meta name="viewport" content="width=device-width, initial-scale=1.0">								<!--ΞΞ-->
+<!--ΞΞ-->		<meta name="Description" content="This page is for learning.">
+				<title>Divyansh Restraunt</title>										<!--ΞΞ-->
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->
+
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->
+<!--ΞΞ-->										<!--ΞΞ-->
+<!--ΞΞ-->		<link rel="stylesheet" type="text/css" href="file\csslibrary.css">									<!--ΞΞ-->
+<!--ΞΞ-->		<link rel="shortcut icon" type="image/x-icon" href="res\icon.png"/>								<!--ΞΞ-->
+<!--ΞΞ-->		</head>																								<!--ΞΞ-->
+<!--ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ-->
+<body>
+
+<!-- DIvyansh Restraunt (This project is fully based on arrays)-->
+<div id="container">
+<div id="innercontainer">
+
+						<h3 id="res">Divyansh Restraunt E-Manual</h3>
+										<h1>Welcome!</h1>
+
+<button onclick="finddish(dishoutput)" id="button1">Get a random Dish Name</button>
+
+<button onclick="getalldishes(alldishes , dishoutput)" id="button2">Get Our All Dishes Name </button><br>
+
+<a href="makemeal.html"><button id="makemeal">Make Your Meal</button></a>
+
+<!-- <button onclick="finddishimage(dishimage)" id="button2">Find Dish Image</button><br>
+
+<img id="dishimage" src=""> -->
+
+<input type="text" placeholder="Search a Dish" id="searchdish"><br>
+
+<button id="searchbutton" onclick="search(searchdish , searchdishoutput)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" id="mysvg">
+	<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+  </svg></button><br>
+
+
+
+<select id="filterbutton" onchange="startfilter(filterbutton)">
+	<option disabled selected>Filter</option>
+	<option value="bname">By Name</option>
+</select>
+
+<p id="searchdishoutput"></p><br><br>
+<p id="dishoutput"></p><br>
+<p id="alldishes"></p>
+
+<i id="italic">This website is in Development.</i>
+</div>
+</div>
+<img src="" id="dishimage">
+
+
+
+</body>
+<script type="text/javascript" src="file\jslibrary.js"></script>	
+</html>
